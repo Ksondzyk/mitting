@@ -1,5 +1,5 @@
 function squareArray(arr) {
-  const result = [];
+  if (!Array.isArray(arr)) const result = [];
   for (let i = 0; i < arr.length; i++) {
     const square = arr[i] * arr[i];
     result.push(square);
