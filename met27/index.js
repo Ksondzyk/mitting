@@ -16,7 +16,7 @@ console.log(lastNumber);
 // ... code here
 
 /* push - добавит элемент в конец массива */
-numbersList.push(6);
+const res = numbersList.push(6);
 
 // console.log(result);
 
@@ -74,14 +74,13 @@ console.log(squaredNumbers);
 
 // c помощью метода filter создайте новый массив evenNumbers, в котором только четные числа из numbersList
 // выведите evenNumbers в консоль
-function callback(num) {
-  return num % 2 === 0;
-}
+// function callback(num) {
+//   return num % 2 === 0;
+// }
 
-const res = numbersList.filter(callback);
+const resu = numbersList.filter((el) => el % 2 === 0);
 // ... code here
 
-console.log(res);
 /* метод find */
 /* const arrElement = arr.filter(callback) - вернет первый элемент массива arr, который удовлетворяет условию в callback. */
 /* ф-ция callback запустится по очереди для каждого элемента начального массива arr */
@@ -96,4 +95,4 @@ function callback(num) {
   return num % 2 === 1;
 }
 
-const firstOdd = numbers_list(callback);
+const firstOdd = numbersList.find(callback);
