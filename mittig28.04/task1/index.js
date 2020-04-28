@@ -10,7 +10,7 @@ const numbersList = [4.78, 6.9, 3.666];
 // const sum = numbersList.reduce(callback, 0);
 // console.log(sum);
 
-const getTotaPrice = (arr) => {
+const getTotalPrice = (arr) => {
   const sum = arr.reduce(function callback(acc, num) {
     return acc + num;
   }, 0);
