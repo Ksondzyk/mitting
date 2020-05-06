@@ -25,6 +25,6 @@ function compareObject(obj1, obj2) {
   }
   return keys1.reduce((acc, key) => obj1[key] === obj2[key], true);
 }
-compareObject(obj1, obj2);
-compareObject(obj2, obj3);
-compareObject(obj1, obj4);
+// compareObject(obj1, obj2);
+// compareObject(obj2, obj3);
+// compareObject(obj1, obj4);
