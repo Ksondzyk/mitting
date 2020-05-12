@@ -1,7 +1,7 @@
-function makeCounter() {
+export function makeCounter() {
   let counter = 0;
   return function count() {
     return counter++;
   };
 }
-makeCounter();
+const counter1 = makeCounter();
