@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .list-item {
+        margin: 8px;
+        border: 3px solid #ccc;
+      }
+
+      .list {
+        border: 3px solid coral;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="list">
+      <li class="list-item">1</li>
+      <li class="list-item">2</li>
+      <li class="list-item">3</li>
+    </ul>
+  </body>
+  <script>
+    const itemElem = document.querySelector(".list");
+
+    console.log(itemElem);
+
+    function sayHi(event) {
+      if (event.target.classList.contains("list-item")) {
+        console.log(event.target.textContent);
+      }
+    }
+    // window.addEventListener("click", () => {
+    //   console.log("window");
+    // });
+    // window.addEventListener(
+    //   "click",
+    //   (event) => {
+    //     event.stopPropagation();
+    //     console.log("window");
+    //   },
+    //   true
+    // );
+    // document.addEventListener("click", () => {
+    //   console.log("document");
+    // });
+
+    itemElem.addEventListener("click", sayHi);
+
+    //   const itemElems = document.querySelectorAll(".list-item");
+    //     const itemElem = document.querySelector(".list");
+
+    //     console.log(itemElem);
+
+    //     function sayHi(event) {
+    //         console.log(event.target.textContent);
+    //     }
+
+    //     itemElems.forEach((listItemElement) => {
+    //         listItemElement.addEventListener("click", sayHi);
+    //     });
+
+    //     function onClick() {
+    //         console.log("list");
+    //     }
+    //     itemElem.addEventListener("click", onClick);
+
+    // window.addEventListener("click", () => {
+    //   console.log("window");
+    // });
+    // window.addEventListener(
+    //   "click",
+    //   () => {
+    //     console.log("window");
+    //   },
+    //   true
+    // );
+    // document.addEventListener(
+    //   "click",
+    //   () => {
+    //     console.log("document");
+    //   },
+    //   true
+    // );
+
+    //   const itemElems = document.querySelectorAll('.list-item');
+    //     console.log(itemElems);
+    //     function sayHi(event) {
+    //         console.log(event.target.textContent);
+    //     }
+    // itemElems.
+    // itemElem1.addEventListener('click', sayHi);
+    // // === 2 ===
+    // const itemElem2 = document.querySelector('.list-item:nth-child(2)');
+    // itemElem2.addEventListener('click', sayHi);
+    // // === 3 ===
+    // const itemElem3 = document.querySelector('.list-item:last-child');
+    // itemElem3.addEventListener('click', sayHi);
+  </script>
+</html>
