@@ -1,4 +1,4 @@
-import {renderTasks, tasks} from'./render'
+import {renderTasks, tasks} from'./render.js'
 
 function createTask() {
   const input = document.querySelector(".task-input");
@@ -12,8 +12,6 @@ function createTask() {
     id: (tasks.length + 1).toString(),
     finishDate: null,
   });
-  console.log(tasks);
-
   renderTasks(tasks);
   input.value = "";
 }

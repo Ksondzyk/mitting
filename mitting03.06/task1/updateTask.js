@@ -1,3 +1,4 @@
+import {tasks , renderTasks} from "./render.js";
 
 function updateTask(event) {
 
